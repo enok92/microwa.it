@@ -1,4 +1,11 @@
-/* If you're feeling fancy you can add interactivity 
-    to your site with Javascript */
+var video = document.querySelector("#videoElement");
 
-console.log("Hello, world!");
+if (navigator.mediaDevices.getUserMedia) {
+  navigator.mediaDevices.getUserMedia({ video: true })
+    .then(function (stream) {
+      video.srcObject = stream;
+    })
+    .catch(function (err0r) {
+      console.log("Something went wrong!");
+    });
+}
