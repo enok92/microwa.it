@@ -23,3 +23,8 @@ video {
   height: auto;
   max-width: 100%;
 }
+
+.pattern{
+  position: absolute;
+  mix-blend-mode: 
+}
