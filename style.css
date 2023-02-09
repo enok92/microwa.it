@@ -26,6 +26,15 @@ video {
 div{
   background-color:black;
   color:white;
-  font-size:200px;
+  font-size:120px;
   text-align:center;
+  width: 350px;
+  border-radius: 25px;
+  left: 1000px;
+  top: 800px;
+}
+
+@font-face {
+  font-family: 'DS-Digital';
+  src: URL("https://cdn.glitch.global/1488ee4e-90b5-47a3-bc07-08988761a410/DS-DIGI.TTF?v=1675950859607") format("truetype");
 }
