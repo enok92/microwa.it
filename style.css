@@ -25,15 +25,16 @@ video {
 }
 div{
   background-color:black;
-  color:white;
-  font-size:120px;
+  color:#39ff14;
+  font-size:90px;
   text-align:center;
-  width: 350px;
+  width: 250px;
   border-radius: 25px;
   position:right bottom;
 }
 
 @font-face {
-  font-family: "LCD";
-  src: URL("https://cdn.glitch.global/1488ee4e-90b5-47a3-bc07-08988761a410/DS-DIGI.TTF?v=1675950859607") format("truetype");
+   font-family: myFirstFont;
+   src: url("LCD2B___.TTF");
+   font-weight: bold;
 }
