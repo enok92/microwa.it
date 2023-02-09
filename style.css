@@ -30,8 +30,7 @@ div{
   text-align:center;
   width: 350px;
   border-radius: 25px;
-  left: 1000px;
-  top: 800px;
+  position:right bottom;
 }
 
 @font-face {
