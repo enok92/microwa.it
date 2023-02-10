@@ -6,42 +6,42 @@
     <link rel="stylesheet" href="style.css" />
     <link href="mikro.html" />
     <style>
-      #container {
-        margin: 0px auto;
-        width: 970px;
-        height: 570px;
-        border: 0px #333 solid;
-        top: 50px;
-      }
-      #videoElement {
-        width: 970px;
-        height: 700px;
-        background-color: #666;
-        top: 50px;
-      }
-      #videoElement:before {
-        position:absolute;
-        top:0;
-        right:0;
-        bottom:0;
-        left:0;
-        background-image: url("https://cdn.glitch.global/1488ee4e-90b5-47a3-bc07-08988761a410/124991429-small-polka-dots-seamless-pattern-background-polka-dot-fabric-retro-vector-background-or-pattern-cas.jpg")
-      }
-    </style>
-  </head>
-  <body>
-    <div><span id="timer"></span></div>
-    <div id="container" />
-    <video autoplay="true" id="videoElement"></video>
-    <style>
       body {
         background-image: url("https://cdn.glitch.global/1488ee4e-90b5-47a3-bc07-08988761a410/1-microwave-interior-allan-swart.jpg?v=1675956709098");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
       }
-    </style>
-  </body>
+      #videoContainer {
+        position: relative;
+        margin: 0px auto;
+        width: 970px;
+        height: 700px;
+        border: 0px #333 solid;
+        top: 50px;
+      }
+      #videoOverlay,
+      #videoElement {
+        width: 100%;
+        height: 100%;
+      }
 
-  <script src="script.js"></script>
+      #videoOverlay {
+        position: absolute;
+        mix-blend-mode: multiply;
+        background-image: url("https://cdn.glitch.global/1488ee4e-90b5-47a3-bc07-08988761a410/124991429-small-polka-dots-seamless-pattern-background-polka-dot-fabric-retro-vector-background-or-pattern-cas.jpg");
+      }
+      #videoElement {
+        background-color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="timerContainer"><span id="timer"></span></div>
+    <div id="videoContainer">
+      <div id="videoOverlay"></div>
+      <video autoplay="true" id="videoElement"></video>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
