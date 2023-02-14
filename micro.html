@@ -37,16 +37,17 @@
       #videoElement {
         background-color: #666;
       }
-      
-      #Overlay {
+
+      #imageOverlay {
         position: absolute;
-        
-        background-image: url("https://cdn.glitch.global/1488ee4e-90b5-47a3-bc07-08988761a410/original_449fd784c6b5a41cc813278ffbb7b516.gif?v=1676387094851");
-        
+        top: 230px;
+        right: 20px;
       }
     </style>
-    <audio src="https://cdn.glitch.global/1488ee4e-90b5-47a3-bc07-08988761a410/microwave-54878.mp3?v=1676316157094" autoplay></audio>
-    
+    <audio
+      src="https://cdn.glitch.global/1488ee4e-90b5-47a3-bc07-08988761a410/microwave-54878.mp3?v=1676316157094"
+      autoplay
+    ></audio>
   </head>
   <body>
     <div id="timerContainer"><span id="timer"></span></div>
@@ -55,6 +56,10 @@
       <video autoplay="true" id="videoElement"></video>
     </div>
     <script src="script.js"></script>
-    <img src="https://cdn.glitch.global/1488ee4e-90b5-47a3-bc07-08988761a410/original_449fd784c6b5a41cc813278ffbb7b516.gif?v=1676387094851" alt="tårta" width="30%">
+    <div class="imageOverlay">
+      <img
+        src="https://cdn.glitch.global/1488ee4e-90b5-47a3-bc07-08988761a410/original_449fd784c6b5a41cc813278ffbb7b516.gif?v=1676387094851"
+      />
+    </div>
   </body>
 </html>
