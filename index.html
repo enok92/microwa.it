@@ -9,7 +9,7 @@
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
     
-    <video id="micro-video" controls>
+    <video id="micro-video" controls autoplay>
   <source src="https://cdn.glitch.me/1488ee4e-90b5-47a3-bc07-08988761a410/mikrointro1_1.mp4?v=1676475055815" type="video/mp4">
 </video>
 
@@ -31,7 +31,13 @@
   </style>
  
    <style>
- 
+     #micro-video{
+       position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+     }
 
 </style>
     <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
