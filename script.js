@@ -1,4 +1,5 @@
 var video = document.querySelector("#videoElement");
+var siteActive = true;
 
 if (navigator.mediaDevices.getUserMedia) {
   navigator.mediaDevices
@@ -12,7 +13,7 @@ if (navigator.mediaDevices.getUserMedia) {
 }
 
 document.getElementById("timer").innerHTML = 5 + ":" + 0;
-startTimer();
+
 
 function startTimer() {
   var presentTime = document.getElementById("timer").innerHTML;
@@ -23,13 +24,16 @@ function startTimer() {
     m = m - 1;
   }
   if (m < 0) {
-    alert("TIME IS UP!")
+    alert("TIME IS UP!");
     return;
   }
 
   document.getElementById("timer").innerHTML = m + ":" + s;
   console.log(m);
-  setTimeout(startTimer, 1000);
+
+  if (siteActive == true) {
+    setTimeout(startTimer, 1000);
+  }
 }
 
 function checkSecond(sec) {
@@ -42,3 +46,13 @@ function checkSecond(sec) {
   return sec;
 }
 
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "visible") {
+    siteActive = true;
+    setTimeout(startTimer, 1000);
+  } else {
+    siteActive = false;
+  }
+});
+
+startTimer();
