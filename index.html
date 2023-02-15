@@ -8,6 +8,17 @@
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
+    
+    <video id="micro-video" controls>
+  <source src="https://cdn.glitch.me/1488ee4e-90b5-47a3-bc07-08988761a410/mikrointro1_1.mp4?v=1676475055815" type="video/mp4">
+</video>
+
+<script>
+  var video = document.getElementById("micro-video");
+  video.addEventListener("ended", function () {
+    window.location.href = "micro.html";
+  });
+</script>
   </head>
   <style>
     .button{
@@ -18,13 +29,10 @@
       top: 690px;
     }
   </style>
-  <body style="text-align:center;">
-    <a href="micro.html">
-      <img class="button" src="https://cdn.glitch.global/1488ee4e-90b5-47a3-bc07-08988761a410/start-knapp.png?v=1675868785596">
-    </a>
+ 
    <style>
 body {
-  background-image: url("https://cdn.glitch.global/1488ee4e-90b5-47a3-bc07-08988761a410/6362518_sd.jpg?v=1676026313367");
+  background-image: url("https://cdn.glitch.global/1488ee4e-90b5-47a3-bc07-08988761a410/0001.png?v=1676474979978");
    background-repeat: no-repeat;
    background-attachment: fixed; 
   background-size: cover;
