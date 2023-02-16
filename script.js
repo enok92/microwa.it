@@ -24,7 +24,7 @@ function startTimer() {
     m = m - 1;
   }
   if (m < 0) {
-    soundPlay("error sound src")
+    soundPlay("beep")
     return;
   }
 
