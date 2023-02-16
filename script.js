@@ -14,7 +14,6 @@ if (navigator.mediaDevices.getUserMedia) {
 
 document.getElementById("timer").innerHTML = 5 + ":" + 0;
 
-
 function startTimer() {
   var presentTime = document.getElementById("timer").innerHTML;
   var timeArray = presentTime.split(/[:]+/);
@@ -24,7 +23,7 @@ function startTimer() {
     m = m - 1;
   }
   if (m < 0) {
-    soundPlay("beep")
+    soundPlay("beep");
     return;
   }
 
@@ -57,10 +56,10 @@ document.addEventListener("visibilitychange", () => {
 
 startTimer();
 
-function soundPlay(src){
-var audioElement = document.getElementById('player-src');
-audioElement.src =src ; //src for the player
-var myAudio = document.getElementById("player");
-myAudio.load();
-myAudio.play();
+function soundPlay(src) {
+  var audioElement = document.getElementById("player-src");
+  audioElement.src = src; //src for the player
+  var myAudio = document.getElementById("player");
+  myAudio.load();
+  myAudio.play();
 }
