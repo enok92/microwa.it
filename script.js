@@ -12,7 +12,7 @@ if (navigator.mediaDevices.getUserMedia) {
     });
 }
 
-document.getElementById("timer").innerHTML = 1 + ":" + 0;
+document.getElementById("timer").innerHTML = 5 + ":" + 0;
 
 
 function startTimer() {
