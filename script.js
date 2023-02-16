@@ -12,7 +12,7 @@ if (navigator.mediaDevices.getUserMedia) {
     });
 }
 
-document.getElementById("timer").innerHTML = 5 + ":" + 0;
+document.getElementById("timer").innerHTML = 1 + ":" + 0;
 
 
 function startTimer() {
@@ -24,7 +24,7 @@ function startTimer() {
     m = m - 1;
   }
   if (m < 0) {
-    alert("TIME IS UP!");
+    soundPlay("error sound src")
     return;
   }
 
@@ -56,3 +56,11 @@ document.addEventListener("visibilitychange", () => {
 });
 
 startTimer();
+
+function soundPlay(src){
+var audioElement = document.getElementById('player-src');
+audioElement.src =src ; //src for the player
+var myAudio = document.getElementById("player");
+myAudio.load();
+myAudio.play();
+}
