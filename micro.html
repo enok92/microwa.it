@@ -7,28 +7,33 @@
     <link href="mikro.html" />
     <style>
   
-      #videoContainer {
-        position: relative;
-        margin: 0px auto;
-        width: 600px;
-        height: 450px;
-        border: 0px #333 solid;
-        left: 32px;
-        top: 240px;
-      }
+
 
       #videoElement {
         background-color: #666;
+        position: fixed;
+        height: 500px;
+        width: 300px;
+        left: 50%;
+        margin-left: -150px;
+        top: 50%;
+        margin-top: -150px;
         z-index: -1;
       }
 
-      #imageOverlay {
-        position: absolute;
-        top: 230px;
-        right: 20px;
+      
+      #image {
+        background-image: url("https://cdn.glitch.global/1488ee4e-90b5-47a3-bc07-08988761a410/ny-mikro.png?v=1676495912846");
+        position: fixed;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
       }
       
-      #image
+      }
     </style>
     <audio
       src="https://cdn.glitch.global/1488ee4e-90b5-47a3-bc07-08988761a410/microwave-54878.mp3?v=1676316157094"
@@ -36,7 +41,6 @@
     ></audio>
     
     <audio controls id="player" style="display: none">
-<source id="player-src" src=("https://.glitch.global/1488ee4e-90b5-47a3-bc07-08988761a410/microwave-ding-104123.mp3?v=1676548879441")</source>
 </audio>
   </head>
   <body>
@@ -46,7 +50,7 @@
       <video autoplay="true" id="videoElement"></video>
     </div>
     <script src="script.js"></script>
-    <div class="imageOverlay">
+    <div id="image">
     
     </div>
   </body>
