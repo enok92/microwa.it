@@ -46,3 +46,8 @@ video {
    src: url("https://cdn.glitch.global/1488ee4e-90b5-47a3-bc07-08988761a410/LCD2B___.TTF?v=1675954219426");
    font-weight: bold;
 }
+
+@keyframes logo-banner{
+  from{transform: translateX(0px)}
+  to{transform: translateX(100px)}
+}
