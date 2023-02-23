@@ -1,0 +1,62 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: -0rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+  background-color: black;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+#timerContainer {
+  background-color: black;
+  color: #39ff14;
+  font-size: 90px;
+  text-align: center;
+  width: 250px;
+  height: 130px;
+  border-radius: 25px;
+  font-family: myFirstFont;
+  position: absolute;
+  right: 40px;
+  bottom: 20px;
+  text-shadow: 0 0 7px #39ff14, 0 0 21px #39ff14, 0 0 42px #39ff14;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url("https://cdn.glitch.global/1488ee4e-90b5-47a3-bc07-08988761a410/LCD2B___.TTF?v=1675954219426");
+  font-weight: bold;
+}
+
+#webring{
+  background-color: black;
+  padding: 15px;
+  color: white;
+  font-family: myFirstFont;
+  border-radius: 20px;
+  font-size: 10px;
+  position: fixed;
+  left: 5px;
+  bottom: -90px;
+  width: 650px;
+  height: 130px;
+}
+
+a {
+  color:#39ff14 ;
+  text-shadow: 0 0 7px #39ff14, 0 0 21px #39ff14;
+}

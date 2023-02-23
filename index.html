@@ -1,0 +1,70 @@
+<!--
+███████████░░░░░░░░░███████████░░░░░░░░░░░░░░░███████
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+████████████░░░░░░░████████████░░░░░░░░░░░░░░░███████
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+█████████████░░░░░█████████████░░░░░░░░░░░░░░░███████
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+██████████████░░░██████████████░░░█████████░░░███████
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+███████░░░█████░█████░░░███████░░█████░█████░░███████
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+███████░░░░█████████░░░░█████████████░░░█████████████
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+███████░░░░░███████░░░░░████████████░░░░░████████████
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+███████░░░░░░░░░░░░░░░░░███████████░░░░░░░███████████
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+███████░░░░░░░░░░░░░░░░░██████████░░░░░░░░░██████████
+-->
+<html>
+  <head>
+
+    <title>microwa.it</title>
+  
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    
+    <video id= "micro-video" onclick="this.play()">
+    <source src="https://cdn.glitch.me/1488ee4e-90b5-47a3-bc07-08988761a410/Sequence%2001.mp4?v=1676549552869" />
+</video>
+
+<script>
+  var video = document.getElementById("micro-video");
+  video.addEventListener("ended", function () {
+    window.location.href = "micro.html";
+  });
+</script>
+  </head>
+  <style>
+    .button{
+      align:auto;
+      position: absolute;
+      height: 95px;
+      left: 1583px;
+      top: 690px;
+    }
+  </style>
+ 
+   <style>
+     #micro-video{
+       position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: 0;
+     }
+
+     
+    
+</style>
+
+  
+    <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+ <body style="background-color:black;">
+   
+</html>

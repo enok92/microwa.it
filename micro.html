@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <title>microwa.it</title>
+    <meta charset="utf-8" />
+    <title>Display Webcam Stream</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="mikro.html" />
+    <style>
+      #videoElement {
+        background-color: #666;
+        position: fixed;
+        height: 500px;
+        width: 800px;
+        left: 36%;
+        margin-left: -136px;
+        top: 20%;
+        margin-top: -120px;
+        z-index: -1;
+      }
+
+      #image {
+        background-image: url("https://cdn.glitch.global/1488ee4e-90b5-47a3-bc07-08988761a410/ny-mikro444.png?v=1676563825283");
+        position: fixed;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      
+
+      #cake {
+        background-image: url("https://cdn.glitch.global/1488ee4e-90b5-47a3-bc07-08988761a410/burgerfinal.gif?v=1676557285866");
+        z-index: 2;
+        position: fixed;
+        height: 840px;
+        width: 1450px;
+        top: 230px;
+        right: 150px;
+        scale: 0.45;
+      }
+
+      #timerContainer {
+        z-index: 3;
+      }
+      
+    
+      
+    </style>
+  </head>
+  <body>
+    <div id="timerContainer"><span id="timer"></span></div>
+    <div id="videoContainer">
+      <div id="videoOverlay"></div>
+      <video autoplay="true" id="videoElement"></video>
+    </div>
+    <script src="script.js"></script>
+    <div id="image">
+      <div id="cake">
+      </div>
+<div id="webring">
+          <div id="webring-left">
+          </div>
+          <div id="webring-middle">
+            <a href="https://metaversetv.room">Previous</a> This Single Serving Site is based on the
+            <a href="https://en.wikipedia.org/wiki/Microwave"
+              >Microwave Wikipedia entry</a
+            >
+            and is part of the
+            <a href="https://2023.worldwidewebring.club">Social Media</a>
+            Webring <a href="https://nakedtruth.exposed">Next</a>
+          </div>
+
+          <div id="webring-right">
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
